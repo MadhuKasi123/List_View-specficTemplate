@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(111, 134, 134);
+            color: rgb(36, 3, 250);
+            
+            
+        }
+        h3{
+            color: rgb(138, 238, 16);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>List Of School Object</h1>
+        {% for school in schools %}
+
+          <a href="{{school.pk}}"><h3>{{ school.sname }}</h3></a>
+
+        {% endfor%}
+    </center>
+</body>
+</html>
